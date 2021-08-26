@@ -23,8 +23,12 @@ jobs:
         run: |-
           git config user.name "Automation"
           git config user.email "github-actions@github.com"
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.2.0
+        with:
+          node-version: "14"
       - name: Install dependencies
-        run: yarn install --check-files --frozen-lockfile
+        run: npm ci
       - name: build
         run: npx projen build
       - name: Check for changes

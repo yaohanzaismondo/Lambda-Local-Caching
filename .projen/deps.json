@@ -1,12 +1,20 @@
 {
   "dependencies": [
     {
-      "name": "@types/jest",
+      "name": "@types/babel__core",
+      "type": "build"
+    },
+    {
+      "name": "@types/chai",
+      "type": "build"
+    },
+    {
+      "name": "@types/mocha",
       "type": "build"
     },
     {
       "name": "@types/node",
-      "version": "^10.17.0",
+      "version": "^14",
       "type": "build"
     },
     {
@@ -15,6 +23,10 @@
     },
     {
       "name": "@typescript-eslint/parser",
+      "type": "build"
+    },
+    {
+      "name": "chai",
       "type": "build"
     },
     {
@@ -34,16 +46,11 @@
       "type": "build"
     },
     {
-      "name": "jest",
-      "type": "build"
-    },
-    {
-      "name": "jest-junit",
-      "version": "^12",
-      "type": "build"
-    },
-    {
       "name": "json-schema",
+      "type": "build"
+    },
+    {
+      "name": "mocha",
       "type": "build"
     },
     {
@@ -61,7 +68,12 @@
       "type": "build"
     },
     {
-      "name": "ts-jest",
+      "name": "ts-node",
+      "type": "build"
+    },
+    {
+      "name": "typedoc",
+      "version": "^0.21.4",
       "type": "build"
     },
     {

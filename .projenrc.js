@@ -3,7 +3,7 @@ const { TypeScriptProject, NodePackageManager, ProjectType, NpmAccess } = requir
 const project = new TypeScriptProject({
   defaultReleaseBranch: 'main',
   name: 'lambda-local-caching',
-  description: 'Library to redact sensitive information from Axios errors',
+  description: 'Library to cache variables in AWS Lambda',
   keywords: [
     'lambda',
     'caching',
@@ -18,16 +18,12 @@ const project = new TypeScriptProject({
   authorEmail: 'yaohancz@gmail.com',
   authorName: 'Yaohan Zais',
   jest: false,
-  deps: [
-    'axios',
-    '@types/axios',
-  ],
   devDeps: [
     'chai',
+    'ts-node',
     '@types/chai',
     'mocha',
     '@types/mocha',
-    'ts-eager',
     '@types/babel__core',
   ],
   releaseToNpm: true,
